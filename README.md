@@ -16,17 +16,6 @@ The project is hosted live on Vercel  and can be viewed at:
 
 **[https://frontend-basics.zainriaz.dev](https://frontend-basics.zainriaz.dev)** 
 
----
-
-## ✨ Key Features
-
-* **Professionally Deployed:** Hosted on Vercel  with a custom subdomain .
-* **Optimized Assets:** Uses ImageKit CDN for hosting images to demonstrate the `<img src>` tag effectively (no broken links!) .
-* **Clean Structure:** Organized into multiple linked pages instead of a single file .
-* **Demonstrates:** Core HTML tags like `<p>`, `<h1>`, `<u>`, `<br>`, `<img>`, `<a>`, `<mailto>`, `<ul>`, `<ol>`, and `<table>` .
-
----
-
 ## 💻 Tech Stack
 
 * HTML5
