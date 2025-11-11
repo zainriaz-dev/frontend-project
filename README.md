@@ -24,7 +24,6 @@ The project is hosted live on Vercel  and can be viewed at:
 * JavaScript (WIP)
 * Vercel (Deployment)
 * ImageKit (Image CDN)
-* Cursor IDE
 
 ---
 
