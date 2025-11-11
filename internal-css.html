@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: blue;
+            font-family: Arial, sans-serif;
+        }
+        
+        h2 {
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+            color: darkgreen;
+        }
+        
+        p {
+            font-size: 18px;
+            text-align: left;
+        }
+        
+        .monospace-text {
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+        }
+        
+        .bold-text {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .italic-text {
+            font-style: italic;
+            font-size: 18px;
+        }
+        
+        .center-text {
+            text-align: center;
+        }
+        
+        .right-text {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .quote {
+            background: #f0fdfa;
+            border-left: 4px solid #0f766e;
+            padding: 12px 16px;
+            margin: 16px 0;
+        }
+        
+        .styled-box {
+            background-color: lightblue;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .styled-box p {
+            color: darkblue;
+            font-size: 18px;
+        }
+        
+        .image-container {
+            text-align: center;
+        }
+        
+        .styled-image {
+            max-width: 100%;
+            width: 400px;
+            height: auto;
+            border: 3px solid blue;
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px gray;
+        }
+        
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+        }
+
+        .center-heading {
+            text-align: center;
+        }
+        
+        .back-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .back-link a {
+            color: blue;
+            font-size: 16px;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+            
+            p {
+                font-size: 16px;
+            }
+            
+            .monospace-text {
+                font-size: 14px;
+            }
+            
+            .bold-text {
+                font-size: 18px;
+            }
+            
+            .italic-text {
+                font-size: 16px;
+            }
+            
+            .center-text {
+                font-size: 14px;
+            }
+            
+            .styled-box {
+                padding: 10px;
+                margin: 15px 0;
+            }
+            
+            .styled-box p {
+                font-size: 16px;
+            }
+            
+            .styled-image {
+                border: 2px solid blue;
+                border-radius: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Internal CSS</h1>
+
+    <p>Internal CSS lives inside the &lt;style&gt; tag in the head.</p>
+
+    <h2>Text styles</h2>
+    <p class="monospace-text">This text uses Courier New.</p>
+    <p class="bold-text">This text is bold (20px).</p>
+    <p class="italic-text">This text is italic.</p>
+    <p class="center-text">This text is centered.</p>
+    <p class="right-text">This text is right-aligned.</p>
+
+    <div class="styled-box">A simple box with background and padding.</div>
+
+    <h2>Reflection</h2>
+    <h3>Subheading example</h3>
+    <p class="center-text quote">
+        Be truthful and fair in every matter; this builds trust.<br>
+        Keep your promises and respect the rights of others.<br>
+        Help people quietly—Allah knows what is hidden.<br>
+        Be patient; with hardship comes ease and growth.<br>
+        Good character is worship—show mercy to family and neighbors.
+    </p>
+
+    <h2 class="center-heading">Image</h2>
+    <div class="image-container">
+        <img src="https://ik.imagekit.io/zainriaz/image.png" alt="Styled Image" class="styled-image">
+    </div>
+    <p class="image-caption">
+        This image has border, border-radius, and box-shadow applied using internal CSS.
+    </p>
+
+    <p class="back-link">
+        <a href="css-basics.html">← Back to CSS Basics</a>
+    </p>
+
+    <p class="back-link">
+        <a href="https://github.com/zainriaz-dev/frontend-project/blob/main/internal-css.html" target="_blank">View this page's source code</a>
+    </p>
+</body>
+</html>
