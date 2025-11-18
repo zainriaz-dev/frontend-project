@@ -1,0 +1,91 @@
+/* --- CLI / Terminal Theme Styles --- */
+body.cli-mode {
+    background-color: #0d1117; /* Github Dark background */
+    color: #39ff14; /* Hacker Neon Green */
+    font-family: 'Courier New', Courier, monospace; /* Terminal Font */
+}
+
+.terminal-window {
+    background-color: #000;
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 255, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.terminal-header {
+    background-color: #333;
+    padding: 5px 10px;
+    color: #ddd;
+    font-size: 0.8em;
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.terminal-body {
+    padding: 20px;
+}
+
+/* CLI Input Fields */
+.cli-input-group {
+    margin-bottom: 15px;
+}
+
+.prompt-sign {
+    color: #00f0ff; /* Cyan color for prompt */
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.cli-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    font-size: 1em;
+    width: 60%;
+    outline: none;
+}
+
+.cli-input:focus {
+    border-bottom: 1px solid #39ff14;
+}
+
+/* CLI Button */
+.cli-btn {
+    background-color: transparent;
+    border: 1px solid #39ff14;
+    color: #39ff14;
+    padding: 10px 20px;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+.cli-btn:hover {
+    background-color: #39ff14;
+    color: #000;
+}
+
+.result-output {
+    margin-top: 20px;
+    border-top: 1px dashed #555;
+    padding-top: 10px;
+    color: #fff;
+}

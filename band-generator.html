@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLI Band Generator</title>
+    <link rel="stylesheet" href="styles/band.css">
+</head>
+<body class="cli-mode">
+
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span style="margin-left: 10px;">zain@linux:~/projects/band-generator</span>
+        </div>
+        
+        <div class="terminal-body">
+            <p>Welcome to Band Name Generator v1.0</p>
+            <p>Type your details to execute generation script...</p>
+            <br>
+
+            <div class="cli-input-group">
+                <span class="prompt-sign">$</span>
+                <label>Enter Name:</label>
+                <input type="text" id="userName" class="cli-input" autocomplete="off">
+            </div>
+
+            <div class="cli-input-group">
+                <span class="prompt-sign">$</span>
+                <label>Enter Age: </label>
+                <input type="number" id="userAge" class="cli-input">
+            </div>
+
+            <div class="cli-input-group">
+                <span class="prompt-sign">$</span>
+                <label>Fav Thing: </label>
+                <input type="text" id="favThing" class="cli-input" autocomplete="off">
+            </div>
+
+            <button id="generateBtn" class="cli-btn">./generate_name.sh</button>
+
+            <div id="resultDisplay" class="result-output"></div>
+        </div>
+    </div>
+
+    <p style="text-align: center; margin-top: 30px;">
+        <a href="js-basics.html" style="color: #555; font-size: 16px;">[ Exit Terminal ]</a>
+    </p>
+
+    <hr style="margin: 40px 0;">
+
+    <p style="text-align: center; line-height: 2.5;">
+        <a href="https://github.com/zainriaz-dev/frontend-project/blob/main/band-generator.html" target="_blank" style="color: #0066cc; text-decoration: none; font-weight: 600;">View this page's source code</a>
+        <br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" style="color: #0066cc; text-decoration: none;">📚 MDN: localStorage</a>
+        <br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" target="_blank" style="color: #0066cc; text-decoration: none;">📚 MDN: EventListeners</a>
+    </p>
+
+    <script>
+        const resultDiv = document.getElementById('resultDisplay');
+        const genButton = document.getElementById('generateBtn');
+
+        // 1. Load (Agar koi purana data bacha ho, wese hum delete kar denge)
+        window.onload = function() {
+            const savedName = localStorage.getItem('tempBandName');
+            if (savedName) {
+                resultDiv.innerHTML = "> Found cached data: " + savedName;
+                // Optional: Auto-clear on refresh if you want
+                // localStorage.removeItem('tempBandName'); 
+            }
+        }
+
+        // 2. Click Logic
+        genButton.addEventListener('click', function() {
+            const name = document.getElementById('userName').value;
+            const age = document.getElementById('userAge').value;
+            const fav = document.getElementById('favThing').value;
+
+            if (name === "" || age === "" || fav === "") {
+                resultDiv.innerHTML = "<span style='color:red;'>Error: Missing arguments. Please fill all fields.</span>";
+                return;
+            }
+
+            resultDiv.innerHTML = "> Processing...<br>";
+
+            // Simulation of processing time (like a real terminal)
+            setTimeout(() => {
+                let adjective = (age < 20) ? "Young" : "Cyber";
+                const bandName = "The " + adjective + " " + fav + " " + name + "s";
+
+                // Save briefly to demonstrate it works
+                localStorage.setItem('tempBandName', bandName);
+
+                // Show Result
+                resultDiv.innerHTML += "> Generating ID...<br>";
+                resultDiv.innerHTML += "> Success! <br><br>";
+                resultDiv.innerHTML += "<span style='color: #39ff14; font-size: 1.5em;'> >> " + bandName + " << </span>";
+
+                // --- CLEANUP LOGIC (Aapki Requirement) ---
+                // Hum thori der baad LocalStorage delete kar denge taake data persist na kare
+                resultDiv.innerHTML += "<br><br>> Clearing cache...";
+                localStorage.removeItem('tempBandName'); // Delete from storage
+                resultDiv.innerHTML += "<br>> Storage cleared.";
+                
+            }, 800); // 0.8 second delay for effect
+        });
+    </script>
+ 
+</body>
+</html>
