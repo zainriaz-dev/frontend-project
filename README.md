@@ -22,10 +22,10 @@ The project is hosted live on Vercel  and can be viewed at:
 ## 💻 Tech Stack
 
 * HTML5
-* CSS3 (WIP)
-* JavaScript (WIP)
-* Vercel (Deployment)
-* ImageKit (Image CDN)
+* CSS3
+* JavaScript
+* Vercel
+* ImageKit
 
 ---
 
