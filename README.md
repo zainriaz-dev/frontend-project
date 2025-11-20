@@ -9,7 +9,7 @@ The project features a multi-page structure, including:
 * Basic HTML Tags (`html-tags.html`) 
 * HTML Lists & Tables (`lists-tables.html`) 
 * CSS Styling & Projects (`css-basics.html`)
-* JS 
+* JAVASCRIPT (`js-basics.html`)
 
 ---
 
