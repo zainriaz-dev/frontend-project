@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Addition Calculator</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0066cc;
+        }
+
+        .calculator-box {
+            background-color: #f0f8ff;
+            padding: 30px;
+            margin: 30px 0;
+            border: 2px solid #0066cc;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .calculator-box h2 {
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin: 15px 0;
+        }
+
+        .input-group label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+            margin-right: 10px;
+            font-weight: 600;
+        }
+
+        .calculator-box input {
+            padding: 10px;
+            font-size: 18px;
+            width: 120px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calculator-box button {
+            padding: 12px 30px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .calculator-box button:hover {
+            background-color: #0052a3;
+        }
+
+        .description {
+            background-color: #fff9e6;
+            padding: 15px;
+            border-left: 4px solid #ffcc00;
+            margin: 20px 0;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-link a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Simple Addition Calculator</h1>
+
+    <div class="description">
+        <p><strong>What this demonstrates:</strong></p>
+        <ul>
+            <li>JavaScript variables (var, let, const)</li>
+            <li>Getting values from input fields using <code>getElementById()</code></li>
+            <li>Converting strings to numbers using <code>Number()</code></li>
+            <li>Performing arithmetic operations (addition)</li>
+            <li>Displaying results using <code>alert()</code></li>
+        </ul>
+    </div>
+
+    <div class="calculator-box">
+        <h2>Add Two Numbers</h2>
+
+        <div class="input-group">
+            <label>First Number:</label>
+            <input type="number" id="num1" value="5" />
+        </div>
+
+        <div class="input-group">
+            <label>Second Number:</label>
+            <input type="number" id="num2" value="10" />
+        </div>
+
+        <button onclick="addNumbers()">Calculate Sum</button>
+    </div>
+
+    <script>
+        // Function to add two numbers
+        function addNumbers() {
+            // Step 1: Get values from input fields
+            var number1 = document.getElementById('num1').value;
+            var number2 = document.getElementById('num2').value;
+
+            // Step 2: Convert strings to numbers
+            var num1 = Number(number1);
+            var num2 = Number(number2);
+
+            // Step 3: Perform addition
+            var sum = num1 + num2;
+
+            // Step 4: Display result in alert box
+            alert("The sum of " + number1 + " and " + number2 + " is: " + sum);
+        }
+    </script>
+
+    <hr style="margin: 40px 0;">
+
+    <p class="back-link">
+        <a href="js-basics.html">← Back to JavaScript Basics</a>
+    </p>
+
+    <p class="back-link">
+        <a href="https://github.com/zainriaz-dev/frontend-project/blob/main/addition-calculator.html"
+            target="_blank">View this page's source code</a>
+    </p>
+
+    <p class="back-link">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"
+            target="_blank">📚 MDN: Number() Function</a>
+    </p>
+
+</body>
+
+</html>

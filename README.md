@@ -1,5 +1,7 @@
 # Frontend Basics Project (Chapter 8)
 
+**Status:** ✅ Completed (November 2025)
+
 This is a simple project demonstrating the fundamental concepts of frontend development (HTML, CSS, and JavaScript) . It was created as part of the Chapter 8 web development task for my Computer Science class .
 
 The project features a multi-page structure, including:

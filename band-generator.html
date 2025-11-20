@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLI Band Generator</title>
-    <link rel="stylesheet" href="styles/band.css">
+    <link rel="stylesheet" href="css/band.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body class="cli-mode">
 
     <div class="terminal-window">
@@ -15,7 +18,7 @@
             <span class="dot green"></span>
             <span style="margin-left: 10px;">zain@linux:~/projects/band-generator</span>
         </div>
-        
+
         <div class="terminal-body">
             <p>Welcome to Band Name Generator v1.0</p>
             <p>Type your details to execute generation script...</p>
@@ -52,11 +55,14 @@
     <hr style="margin: 40px 0;">
 
     <p style="text-align: center; line-height: 2.5;">
-        <a href="https://github.com/zainriaz-dev/frontend-project/blob/main/band-generator.html" target="_blank" style="color: #0066cc; text-decoration: none; font-weight: 600;">View this page's source code</a>
+        <a href="https://github.com/zainriaz-dev/frontend-project/blob/main/band-generator.html" target="_blank"
+            style="color: #0066cc; text-decoration: none; font-weight: 600;">View this page's source code</a>
         <br>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" style="color: #0066cc; text-decoration: none;">📚 MDN: localStorage</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank"
+            style="color: #0066cc; text-decoration: none;">📚 MDN: localStorage</a>
         <br>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" target="_blank" style="color: #0066cc; text-decoration: none;">📚 MDN: EventListeners</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" target="_blank"
+            style="color: #0066cc; text-decoration: none;">📚 MDN: EventListeners</a>
     </p>
 
     <script>
@@ -64,7 +70,7 @@
         const genButton = document.getElementById('generateBtn');
 
         // 1. Load (Agar koi purana data bacha ho, wese hum delete kar denge)
-        window.onload = function() {
+        window.onload = function () {
             const savedName = localStorage.getItem('tempBandName');
             if (savedName) {
                 resultDiv.innerHTML = "> Found cached data: " + savedName;
@@ -74,7 +80,7 @@
         }
 
         // 2. Click Logic
-        genButton.addEventListener('click', function() {
+        genButton.addEventListener('click', function () {
             const name = document.getElementById('userName').value;
             const age = document.getElementById('userAge').value;
             const fav = document.getElementById('favThing').value;
@@ -104,10 +110,11 @@
                 resultDiv.innerHTML += "<br><br>> Clearing cache...";
                 localStorage.removeItem('tempBandName'); // Delete from storage
                 resultDiv.innerHTML += "<br>> Storage cleared.";
-                
+
             }, 800); // 0.8 second delay for effect
         });
     </script>
- 
+
 </body>
+
 </html>

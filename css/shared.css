@@ -1,0 +1,64 @@
+/* ===================================
+   SHARED STYLES FOR ALL PAGES
+   Used by: css-basics.html, js-basics.html
+   =================================== */
+
+/* Minimal styles for spacing and readability */
+body {
+    margin: 10px;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Heading size */
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* List spacing */
+ul {
+    padding-left: 20px;
+}
+
+/* Item typography */
+ul li {
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    font-style: normal;
+    text-align: left;
+}
+
+/* Link appearance */
+a {
+    color: #005bbb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile: smaller text and tighter spacing */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    
+    ul {
+        padding-left: 15px;
+    }
+    
+    ul li {
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}

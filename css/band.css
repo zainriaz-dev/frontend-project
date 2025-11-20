@@ -1,8 +1,15 @@
-/* --- CLI / Terminal Theme Styles --- */
+/* ===================================
+   CLI / TERMINAL THEME STYLES
+   Used by: band-generator.html
+   =================================== */
+
 body.cli-mode {
-    background-color: #0d1117; /* Github Dark background */
-    color: #39ff14; /* Hacker Neon Green */
-    font-family: 'Courier New', Courier, monospace; /* Terminal Font */
+    background-color: #0d1117;
+    /* Github Dark background */
+    color: #39ff14;
+    /* Hacker Neon Green */
+    font-family: 'Courier New', Courier, monospace;
+    /* Terminal Font */
 }
 
 .terminal-window {
@@ -32,9 +39,17 @@ body.cli-mode {
     display: inline-block;
 }
 
-.red { background-color: #ff5f56; }
-.yellow { background-color: #ffbd2e; }
-.green { background-color: #27c93f; }
+.red {
+    background-color: #ff5f56;
+}
+
+.yellow {
+    background-color: #ffbd2e;
+}
+
+.green {
+    background-color: #27c93f;
+}
 
 .terminal-body {
     padding: 20px;
@@ -46,7 +61,8 @@ body.cli-mode {
 }
 
 .prompt-sign {
-    color: #00f0ff; /* Cyan color for prompt */
+    color: #00f0ff;
+    /* Cyan color for prompt */
     font-weight: bold;
     margin-right: 10px;
 }
