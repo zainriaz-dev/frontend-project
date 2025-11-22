@@ -1,11 +1,3 @@
-# Development and internal documentation files
-CHANGELOG_UPDATE.md
-CSS_REORGANIZATION.md
-REORGANIZATION_COMPLETE.md
-PROJECT_COMPLETE.md
-NEW_JS_PROJECTS.md
-*.ps1
-
 # OS files
 .DS_Store
 Thumbs.db
